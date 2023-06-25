@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="7.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="7.0.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.7">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.0.0" />
+    <PackageReference Include="Moq" Version="4.18.4" />
+    <PackageReference Include="xunit" Version="2.4.2" />
+    <PackageReference Include="xunit.runner.console" Version="2.4.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AccountManager.Application\AccountManager.Application.csproj" />
+    <ProjectReference Include="..\AccountManager.Domain\AccountManager.Domain.csproj" />
+    <ProjectReference Include="..\AccountManager.Persistence\AccountManager.Persistence.csproj" />
+    <ProjectReference Include="..\AccountManager\AccountManager.csproj" />
+  </ItemGroup>
+
+</Project>
